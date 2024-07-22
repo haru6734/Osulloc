@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+
+
+/* container */
+
+
+/* sub_visual */
+.sub_visual { font-size: 3rem; color: #fff; text-align: center; padding: 100px 0; }
+.sub_cs { background: url(../images/sub/sv_cs.jpg) no-repeat center;}
+.sub_brand { background: url(../images/sub/sv_brand.jpg) no-repeat center;}
+.sub_visual h2 { font-weight: 400; text-transform: uppercase;}
+
+
+/* contents */
+.contents { padding: 150px 0;}
+
+
+/* notice */
+
+/* form */
+.notice form fieldset { display: flex; gap: 10px; justify-content: flex-end;}
+.notice form select { padding: 5px; width: 80px; height: 30px; border: 1px solid #ccc;}
+.notice form input[type="text"] { padding: 5px; width: 200px; border: 1px solid #ccc;}
+.notice form input[type="submit"] { width: 50px; background: #333; color: #fff; cursor: pointer;}
+
+
+/* table */
+
+.notice table { margin: 50px 0; border-top: 1px solid #000;}
+.notice table th { border-bottom: 1px solid #ccc; padding: 20px; text-align: center;}
+.notice table td { border-bottom: 1px solid #eee; padding: 15px; text-align: center;}
+.notice table td.notice_title { text-align: left;}
+
+
+/* paging */
+
+.notice .paging { display: flex; justify-content: center; gap: 5px;}
+.notice .paging li { border: 1px solid #ddd; width: 25px; text-align: center;}
+
+.notice .paging li.last { cursor: pointer; font-size: 0; border: 0; background: url(../images/sub/paging_first.png) no-repeat center;}
+.notice .paging li.prev { cursor: pointer; font-size: 0; border: 0; background: url(../images/sub/paging_prev.png) no-repeat center;}
+.notice .paging li.next { cursor: pointer; font-size: 0; border: 0; background: url(../images/sub/paging_next.png) no-repeat center;}
+.notice .paging li.first { cursor: pointer; font-size: 0; border: 0; background: url(../images/sub/paging_last.png) no-repeat center;}
+
+.notice .paging li.on { border: 1px solid var(--sub-color); background: var(--sub-color);}
+.notice .paging li.on a { color: #fff;}
+
+
+@media (max-width: 1024px) {
+    .notice table tr :first-child { display: none;}
+    .notice table tr :last-child { display: none;}
+}
+
+@media (max-width: 768px) {
+    .notice table td.notice_title { max-width: 300px; white-space: nowrap; overflow : hidden; text-overflow: ellipsis;}
+}
+
+
+

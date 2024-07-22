@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+:root { 
+    --main-font : "Arita-dotum" ;
+    --sub-font : "Philosopher" ;
+    --main-color : #a89079;
+    --sub-color : #758246;
+    --hover-color : #67625e;
+}
+
+
+body { color: #000; line-height: 1.5; font-size: 1.6rem;
+font-family: "Philosopher", "Arita-dotum", sans-serif;}
+.inner { max-width: 1700px; padding: 0 5%; margin: 0 auto;}
+
+/* popup */
+
+.popup { background: #a89079; text-align: center; padding: 10px; }
+.popup a { color: #fff; }
+.popup .popup_close { float: right; cursor: pointer; color: #fff; }
+
+/* header */
+#header { padding: 10px 0;}
+#header .inner { max-width: 100%; display: flex; justify-content: space-between; align-items: flex-end;}
+
+#header .gnb { display: flex;}
+#header .gnb > li > a { display: block; padding: 10px 40px; font-size: 2rem;}
+
+
+#header .util { display: flex; gap: 20px; align-items: center;}
+#header .util img { width: 24px;}
+
+
+@media (max-width:1024px) {
+    #header h1 img { width: 80px; }
+    #header .gnb { display: none; }
+    #header .util .sitemap { display: none; }
+    #header .util .ham { display: block; }
+}
+
+@media (max-width:768px) {
+    #header .util li:last-child { display: none; }
+}
+
+
+
+/* footer */
+
+#footer { padding: 100px 0; background: #eee; }
+#footer .inner { max-width: 100%; }
+#footer .footer_top { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; padding-bottom: 20px; }
+#footer ul { display: flex; flex-wrap: wrap; gap: 30px; }
+
+#footer .call { text-align:right; }
+#footer .call span { font-weight: 700; color:#758246; font-size:3rem; }
+
+#footer .footer_bottom { display: flex; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid #ddd; padding-top: 50px; }
+
+#footer address { padding: 20px 0; color:#999; }
+#footer .copy { color: #ccc; }
+
+
+
+@media (max-width : 1024px) {
+    #footer { padding: 50px 0; font-size: 1.4rem; }
+    #footer .footer_top { gap: 20px; }
+    #footer ul { gap: 20px; }
+    #footer .footer_top > * { width: 100%; }
+    #footer .call { text-align: left; }
+    #footer .footer_bottom > * { width: 100%; }
+    #footer .copy { padding-top: 20px; }
+}
+
+
+
+
