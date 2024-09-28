@@ -77,6 +77,7 @@
 #teaware .tab_btn li.on { color: var(--main-color); border-bottom: 3px solid var(--main-color);}
 #teaware .tab_img { height: 450px; position: relative; margin-top: 20px;}
 #teaware .tab_img li { position: absolute; left: 0; top: 0; width: 100%;}
+#teaware .tab_img li.on { z-index: 3;}
 #teaware .tab_img img { display: block; width: 100%;}
 
 
